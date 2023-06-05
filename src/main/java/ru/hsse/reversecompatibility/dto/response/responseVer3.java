@@ -1,6 +1,6 @@
 package ru.hsse.reversecompatibility.dto.response;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,6 +11,6 @@ import ru.hsse.reversecompatibility.dto.User;
 @AllArgsConstructor
 @NoArgsConstructor
 public class responseVer3 {
-  private ArrayList<User> users;
+  private List<User> users;
   private Integer count;
 }

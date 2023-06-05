@@ -1,8 +1,8 @@
 package ru.hsse.reversecompatibility.repository;
 import ru.hsse.reversecompatibility.dto.User;
-import java.util.ArrayList;
+import java.util.List;
 
 public interface UserRepository {
-  public ArrayList<User> UsersByRegex(String regex);
+  public List<User> UsersByRegex(String regex);
 
 }

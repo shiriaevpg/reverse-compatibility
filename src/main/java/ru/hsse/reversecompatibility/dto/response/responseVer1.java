@@ -1,6 +1,6 @@
 package ru.hsse.reversecompatibility.dto.response;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class responseVer1 {
-  private ArrayList<String> logins;
+  private List<String> logins;
 
 }

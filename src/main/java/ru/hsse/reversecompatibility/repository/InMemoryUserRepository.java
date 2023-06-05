@@ -4,6 +4,7 @@ import org.springframework.stereotype.Repository;
 import ru.hsse.reversecompatibility.dto.User;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Repository
 public class InMemoryUserRepository implements UserRepository{
@@ -17,11 +18,11 @@ public class InMemoryUserRepository implements UserRepository{
     }
 
     @Override
-    public ArrayList<User> UsersByRegex(String regex) {
+    public List<User> UsersByRegex(String regex) {
       if (regex == ""){
         return users;
       }
-      ArrayList <User> result = new ArrayList<>();
+      List <User> result = new ArrayList<User>();
       for(User curUser: users){
         if (curUser.login().matches(regex)){
             result.add(curUser);
